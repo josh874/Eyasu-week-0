@@ -1,4 +1,4 @@
-from __future__ import print_function
+from future import print_function
 import argparse
 
 parser = argparse.ArgumentParser(description='cmdArgs')
@@ -9,16 +9,4 @@ parser.add_argument('--channel', type=str, default='', help='which channel we pa
 parser.add_argument('--userfile', type=str, default='users.json', help='users profile information')
 
 cfg = parser.parse_args()
-
-# Adjusted parameters 
-cfg.output = 'anonymized.csv'
-cfg.path = 'C:/Users/dell/Desktop/anonymized'
-cfg.channel = 'general'
-cfg.userfile = 'user_profiles.json'
-
-
-# print(cfg) 
-print(cfg.output)
-print(cfg.path)
-print(cfg.channel)
-print(cfg.userfile)
+# print(cfg)
