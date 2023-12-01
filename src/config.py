@@ -1,4 +1,4 @@
-from __future__ import print_function
+from future import print_function
 import argparse
 
 parser = argparse.ArgumentParser(description='cmdArgs')
